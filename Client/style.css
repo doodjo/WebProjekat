@@ -1,0 +1,126 @@
+body {
+        background-image: url("12.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+
+}
+.GlavniKontejner
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: stretch;
+    margin: 3%;
+
+    
+    background: rgb(142,143,199);
+    font-size:20px;
+    font-family: 'Helvetica';   
+
+
+}
+
+
+.Naslov{
+
+    color: rgb(70, 108, 191);
+    font-display: left;
+    font-style: italic;
+    text-align: right;
+    font-weight: 500 bold;
+    font-size: 36px;
+    font-family: 'Helvetica';
+    
+}
+
+table,tr,th, td{
+
+    border: 1px solid rgb(140, 140, 200);  
+    border-collapse:collapse;
+    border-style: groove;
+    text-align: center;
+}
+
+table
+{   
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(179, 179, 179, 0,8);
+    
+}
+.Dodavanje{
+    order: -1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.Forma{
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.Brisanje{
+    order: 1;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.Izmena{
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.red{
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+@media all and (min-width: 800px) {
+
+    .Naslov{
+        flex: 3;
+    }
+    .Dodavanje{
+        order: 1;
+    }
+
+    .red{
+        order: 2;
+    }
+    .Brisanje{
+        order: 2;
+    }
+
+    .Naslov{
+        order: 2;
+    }
+
+    .Forma{
+        order: 2;
+    }
+    .Izmena{
+        order: 4;
+    }    
+
+}
+
+@media all and (min-width: 600px) {
+
+    .Brisanje{
+        flex: 1;
+
+    }
+
+    .red{
+        flex: 2;
+
+    }
+    .Dodavanje{
+        flex: 1;
+    }
+
+}
